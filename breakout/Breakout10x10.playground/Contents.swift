@@ -7,15 +7,16 @@ let HEIGHT = 9
 let EMPTY: FIELD = 0
 let BALL: FIELD = 1
 let PLATE: FIELD = 2
+typealias BOARD = [FIELD]
 
-func makeBoard(_ board: inout [FIELD]) {
-    board = [FIELD](repeating: EMPTY, count: WIDTH * HEIGHT)
+func makeBoard(_ board: inout BOARD) {
+    board = BOARD(repeating: EMPTY, count: WIDTH * HEIGHT)
     
     // set plate
     setPlate(&board, 4)
 }
 
-func setPlate(_ board: inout [FIELD], _ middle: Int) {
+func setPlate(_ board: inout BOARD, _ middle: Int) {
     setField(&board, middle-1,   HEIGHT-1, PLATE)
     setField(&board, middle,     HEIGHT-1, PLATE)
     setField(&board, middle+1,   HEIGHT-1, PLATE)
@@ -28,7 +29,7 @@ func getPlate(_ board: [FIELD], _ middle: inout Int) {
     middle = x+1
 }
 
-func movePlateLeft(_ board: inout [FIELD]) {
+func movePlateLeft(_ board: inout BOARD) {
     var middle = -1
     getPlate(board, &middle)
     if middle > 1 {
@@ -37,7 +38,7 @@ func movePlateLeft(_ board: inout [FIELD]) {
     }
 }
 
-func movePlateRight(_ board: inout [FIELD]) {
+func movePlateRight(_ board: inout BOARD) {
     var middle = -1
     getPlate(board, &middle)
     if middle < WIDTH-2 {
@@ -46,19 +47,19 @@ func movePlateRight(_ board: inout [FIELD]) {
     }
 }
 
-func setField(_ board: inout [FIELD], _ x: Int, _ y: Int, _ value: FIELD) {
+func setField(_ board: inout BOARD, _ x: Int, _ y: Int, _ value: FIELD) {
     assert(x < WIDTH && y < HEIGHT)
     let idx = y * WIDTH + x
     board[idx] = value
 }
 
-func getField(_ board: [FIELD], _ x: Int, _ y: Int) -> FIELD {
+func getField(_ board: BOARD, _ x: Int, _ y: Int) -> FIELD {
     assert(x < WIDTH && y < HEIGHT)
     let idx = y * WIDTH + x
     return board[idx]
 }
 
-func draw(_ board: [FIELD]) {
+func draw(_ board: BOARD) {
     var out: String = ""
     for y in 0..<HEIGHT {
         for x in 0..<WIDTH {
@@ -70,7 +71,7 @@ func draw(_ board: [FIELD]) {
 }
 
 
-var board: [FIELD] = [FIELD]()
+var board: BOARD = BOARD()
 makeBoard(&board)
 
 draw(board)
