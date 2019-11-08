@@ -1,4 +1,4 @@
-LP_ROOT := launchpad-pro-onionpsy
+LP_ROOT := launchpad-pro
 SYSEX_ROOT := sysex
 
 
