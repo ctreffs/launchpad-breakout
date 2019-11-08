@@ -1,0 +1,3 @@
+[submodule "launchpad-pro"]
+	path = launchpad-pro
+	url = https://github.com/ctreffs/launchpad-pro.git
