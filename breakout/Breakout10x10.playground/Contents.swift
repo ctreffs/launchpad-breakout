@@ -21,17 +21,16 @@ func setPlate(_ board: inout BOARD, _ middle: Int) {
     setField(&board, middle,     HEIGHT-1, PLATE)
     setField(&board, middle+1,   HEIGHT-1, PLATE)
 }
-func getPlate(_ board: [FIELD], _ middle: inout Int) {
+func getPlate(_ board: [FIELD]) -> Int {
     var x = 0
     while getField(board, x, HEIGHT-1) != PLATE {
         x+=1
     }
-    middle = x+1
+    return x+1
 }
 
 func movePlateLeft(_ board: inout BOARD) {
-    var middle = -1
-    getPlate(board, &middle)
+    let middle = getPlate(board)
     if middle > 1 {
         setPlate(&board, middle-1)
         setField(&board, middle+1, HEIGHT-1, EMPTY)
@@ -39,8 +38,7 @@ func movePlateLeft(_ board: inout BOARD) {
 }
 
 func movePlateRight(_ board: inout BOARD) {
-    var middle = -1
-    getPlate(board, &middle)
+    let middle = getPlate(board)
     if middle < WIDTH-2 {
         setPlate(&board, middle+1)
         setField(&board, middle-1, HEIGHT-1, EMPTY)
