@@ -1,3 +1,6 @@
 [submodule "launchpad-pro"]
 	path = launchpad-pro
 	url = https://github.com/dvhdr/launchpad-pro.git
+[submodule "launchpad-pro-onionpsy"]
+	path = launchpad-pro-onionpsy
+	url = https://github.com/onionpsy/launchpad-pro.git
