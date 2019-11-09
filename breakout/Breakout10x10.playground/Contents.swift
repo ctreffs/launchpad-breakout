@@ -61,6 +61,27 @@ func index(_ x: Int, _ y: Int) -> Int {
     return y * WIDTH + x
 }
 
+
+func getX(_ index: Int) -> Int {
+    return index % WIDTH
+}
+
+func getY(_ index: Int) -> Int {
+    return index / WIDTH
+}
+
+getX(0)
+getX(1)
+getX(2)
+getX(3)
+getX(4)
+getX(5)
+getX(6)
+getX(7)
+getX(8)
+getX(9)
+getX(10)
+
 func nextX(_ x: Int) -> Int {
     return (x+1) % WIDTH
 }
