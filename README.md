@@ -4,11 +4,11 @@
 	<img src="breakout-launchpad.gif" height="300" alt="breakout launchpad pro"/>
 </p>   
 
-This project implements a basic verion of [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) the 1976 video game for the [Novation Launchpad Pro](https://novationmusic.com/launch/launchpad-pro).
+A basic version of [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) the 1976 video game for the [Novation Launchpad Pro](https://novationmusic.com/launch/launchpad-pro).
 
 The project was created as part of an inhouse hackathon at [Agile Mobile Revolution (AMR) by 7P](https://7p-amr.com) in November 2019.
 
-You may want to watch a [live-stream of it's creation on Twitch](https://www.twitch.tv/videos/505513530). Be aware it's ~20h long :-D
+You may want to watch a [live-stream of it's creation on Twitch](https://www.twitch.tv/videos/505513530) but be aware it's ~20h long XD.
 
 Be also aware this firmware is **ONLY** available for the Launchpad **PRO**!
 
