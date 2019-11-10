@@ -1,5 +1,9 @@
 # Breakout - Video game for Novation Launchpad Pro
 
+<p align="center">
+	<img src="breakout-launchpad.gif" height="300" alt="breakout launchpad pro"/>
+</p>   
+
 This project implements a basic verion of [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game)) the 1976 video game for the [Novation Launchpad Pro](https://novationmusic.com/launch/launchpad-pro).
 
 The project was created as part of an inhouse hackathon at [Agile Mobile Revolution (AMR) by 7P](https://7p-amr.com) in November 2019.
