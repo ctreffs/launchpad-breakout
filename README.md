@@ -8,9 +8,10 @@ A basic version of [Breakout](https://en.wikipedia.org/wiki/Breakout_(video_game
 
 The project was created as part of an inhouse hackathon at [Agile Mobile Revolution (AMR) by 7P](https://7p-amr.com) in November 2019.
 
-You may want to watch a [live-stream of it's creation on Twitch](https://www.twitch.tv/videos/505513530) but be aware it's ~20h long XD.
+You may want to watch a [live-stream of its creation on Twitch](https://www.twitch.tv/videos/505513530) but be aware it's ~20h long XD.
 
-Be also aware this firmware is **ONLY** available for the Launchpad **PRO**!
+### Important notice:
+Beware that this firmware is **ONLY** available for and compatible with the Launchpad **PRO**!
 
 ## 🚀 Getting Started
 
@@ -56,7 +57,7 @@ sysex/         # Folder with Launchpad firmware sysEx + custom firmware sysEx;
 
 ### Patching the firmware
 
-To get Breakout to run on your Launchpad Pro you have to patch the firmware with the custom firmware build by this project.
+To get Breakout to run on your Launchpad Pro you have to patch the firmware with the custom firmware built by this project.
 
 
 1. Connect your Launchpad Pro to your Mac.
@@ -65,7 +66,7 @@ To get Breakout to run on your Launchpad Pro you have to patch the firmware with
 4. Start your Launchpad Pro in update mode:
 	1. Turn Launchpad off.
 	2. Hold down setup button while turning Launchpad back on.
-	3. You will see a static set of colored leds on the pad.
+	3. You will see a static set of colored LEDs on the pad.
 5. Open SysEx Librarian and select `Launchpad Pro` as `Destination`
 6. In SysEx Librarian add `launchpad_pro.syx` from the sysex directory and select it.
 7. Transfer sysEx to Launchpad by pressing `Play`.
@@ -73,7 +74,7 @@ To get Breakout to run on your Launchpad Pro you have to patch the firmware with
 9. The Launchpad Pro will restart after the update automatically.
 10. You should see Breakout running on your device.
 
-For more details on how to patch a firmware onto Launchpad Pro and reset it to the official Firmware please refer to the [firmware readme](https://github.com/ctreffs/launchpad-pro/blob/master/README.md).
+For more details on how to patch a firmware onto Launchpad Pro and reset it to the official firmware please refer to the [firmware readme](https://github.com/ctreffs/launchpad-pro/blob/master/README.md).
 
 
 ## ✍️ Authors
